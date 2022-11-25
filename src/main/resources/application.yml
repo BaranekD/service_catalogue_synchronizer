@@ -1,0 +1,21 @@
+---
+
+connector:
+  rpc:
+    enabled: true
+    url: rpcURL
+    username: rpcUsername
+    password: rpcPassword
+    serializer: jsonlite
+    request-timeout: 1000
+    connection-timeout: 1000
+    connection-request-timeout: 1000
+  mongo:
+    connection-string: mongodb://127.0.0.1:27017 # default value for local mongo
+    db-name: test
+
+attributes:
+  attrs-to-persist:
+    - urn:perun:facility:attribute-def:def:informationURL
+    - urn:perun:facility:attribute-def:def:serviceDescription
+#   - ...
